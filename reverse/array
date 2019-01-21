@@ -1,0 +1,75 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+
+{
+
+int n,i,j,a[10],t;
+
+cout<<"enter the no. of elements:";
+
+cin>>n;
+
+cout<<"enter the elements"<<endl;
+
+for(i=0;i<n;i++){
+
+cin>>a[i];
+
+}
+
+i=0;
+
+j=n-1;
+
+while(i<j){
+
+t=a[i];
+
+a[i]=a[j];
+
+a[j]=t;
+
+i++;
+
+j--;
+
+}
+
+cout<<"reversed array elements are :"<<endl;
+
+for(i=0;i<n;i++){
+
+cout<<a[i];
+
+}
+
+cout<<endl;
+
+}
+
+/*Output:-
+
+
+
+enter the no. of elements:5
+
+enter the elements
+
+1
+
+2
+
+3
+
+4
+
+5
+
+reversed array elements are :
+
+54321
+
+*/
